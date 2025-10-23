@@ -9,17 +9,9 @@ body, html {
 
 canvas {
     display: block;
-    vertical-align: bottom;
 }
 
-.conteudo {
-    position: relative;
-    z-index: 1;
-    padding: 50px;
-    color: white;
-    height: 100vh;
-    /* depende do fundo */
-}
+
 
 
 /* ---- particles.js container ---- */
@@ -45,7 +37,7 @@ canvas {
     top: 48px;
     left: 0;
     width: 80px;
-    color: #13e8e9;
+    color: #77db62;
     font-size: 0.8em;
     text-align: left;
     text-indent: 4px;
@@ -61,7 +53,6 @@ canvas {
 
 #stats,
 .count-particles {
-    -webkit-user-select: none;
     margin-top: 5px;
     margin-left: 5px;
 }

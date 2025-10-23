@@ -7,22 +7,48 @@
   <title>Sobre - Pedro Augusto</title>
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/particles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
+  <header class="cabecalho ">
+    <div class="row justify-content-between">
+      <div class="col-6">
+        <img class="icone" src="./img/76f98505-5538-4210-904e-5d874fc7cb6c.png" alt="">
+      </div>
+      <nav class="navegacao col-2 text-end">
+        <a class="botoes_nav">Home</a>
+        <a class="botoes_nav">About</a>
+        <a class="botoes_nav">Projects</a>
+        <a class="botoes_nav">Contacts</a>
+      </nav>
+    </div>
+
+  </header>
   <!-- Fundo com partículas -->
   <div id="particles-js"></div>
 
   <!-- Conteúdo da página -->
-  <main class="conteudo">
-    <h1>Sobre mim</h1>
-    <p>Este é o conteúdo da página "Sobre".</p>
+  <main class="fundo_home row">
+    <section class="conteudo_home col-6 ">
+      <div class="container_home ">
+        <section class="conteudo">
+          <h1><span class="nome">Pedro</span><br><span class="sobrenome">Augusto</span></h1>
+          <p class="estudo">Estudante FullStack</p>
+          <a href="https://www.linkedin.com/in/pedro-taroco1/" class="btn btn-outline-light botao me-5"
+            target="_blank">Linkedin</a>
+          <a href="https://github.com/pedroT-web" class="btn btn-outline-light botao ms-2" target="_blank">Git Hub</a>
+        </section>
+      </div>
+    </section>
+    <div class=" col-6">
+      <img src="https://blog.unis.edu.br/hubfs/como-esta-o-mercado-para-um-analista-e-desenvolvedor-de-sistemas.png" alt=""
+        class="imagem container_imagem">
+    </div>
+
   </main>
 
-   <main class="conteudo">
-    <h1>Sobre mim</h1>
-    <p>Este é o conteúdo da página "Sobre".</p>
-  </main>
 
   <!-- Scripts -->
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>

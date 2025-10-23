@@ -1,0 +1,120 @@
+@font-face {
+    src: url(../font/Montserrat-VariableFont_wght.ttf);
+    font-family: "montSerrat";
+}
+
+.cabecalho {
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.363);
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0;
+
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    max-height: 100%;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.icone {
+    max-height: 100px;
+    width: 100px;
+}
+
+.botoes_nav {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botoes_nav:hover {
+    transition: 0.2s;
+    transform: translateY(-5px);
+    /* color: #77db62; */
+}
+
+.conteudo {
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+    color: white;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #11111185 0%, #000000ad 110%);
+    padding-left: 50px;
+}
+
+.fundo_home {
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+    display: flex;
+}
+
+.conteudo_home{
+    padding-left: 100px !important;
+}
+
+.container_home {
+    width: 600px !important;
+    height: 300px;
+
+    background-color: #000000ad;
+    border-radius: 12px;
+}
+
+.nome {
+    font-size: 50px;
+    font-weight: 400;
+    font-family: "montSerrat";
+}
+
+.sobrenome {
+    font-family: 'montSerrat', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+
+    color: #ffffff;
+
+    letter-spacing: 2px;
+}
+
+.imagem {
+    max-width: 600px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
+}
+
+.container_imagem{
+    padding-left: 100px;
+}
+
+
+.estudo {
+    font-family: 'montSerrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #ffffff;
+    letter-spacing: 5px;
+    margin-bottom: 4px;
+    display: block;
+
+}
+
+.botao {
+    margin-top: 30px;
+    font-size: 25px;
+    width: 120px;
+    border-radius: 12px !important;
+}
