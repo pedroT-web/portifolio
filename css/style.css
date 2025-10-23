@@ -50,7 +50,7 @@
     height: 300px;
     width: 100%;
     border-radius: 10px;
-    background: linear-gradient(180deg, #11111185 0%, #000000ad 110%);
+    background: rgba(0, 0, 0, 0.116);
     padding-left: 50px;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .container_imagem{
-    padding-left: 100px;
+    padding-left: 50px;
 }
 
 
