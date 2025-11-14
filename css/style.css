@@ -4,15 +4,17 @@
 }
 
 .cabecalho {
-    margin-top: 10px;
-    background-color: rgba(0, 0, 0, 0.363);
-    height: 50px;
+    background-color: rgba(0, 0, 0, 0.664);
+    height: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 100%;
+    min-width: 100%;
     padding: 0;
 
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
 
 .navegacao {
@@ -39,7 +41,7 @@
 .botoes_nav:hover {
     transition: 0.2s;
     transform: translateY(-5px);
-    /* color: #77db62; */
+    color: #77db62;
 }
 
 .conteudo {
@@ -61,7 +63,7 @@
     display: flex;
 }
 
-.conteudo_home{
+.conteudo_home {
     padding-left: 100px !important;
 }
 
@@ -96,7 +98,7 @@
     height: 100%;
 }
 
-.container_imagem{
+.container_imagem {
     padding-left: 100px;
 }
 
@@ -118,3 +120,65 @@
     width: 120px;
     border-radius: 12px !important;
 }
+
+.pag_sobre {
+    height: 100vh;
+    min-width: 100%;
+    background: linear-gradient(180deg, #1111119a 0%, #000000ad 110%);
+}
+
+.conatiner_conteudo_sobre {
+    padding: 100px;
+    color: white;
+
+
+}
+
+.conteudo_sobre {
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+    color: white;
+    height: 500px;
+    width: 80%;
+    border-radius: 10px;
+
+    padding-left: 50px;
+}
+
+.texto_sobre_mim {
+    font-size: 14px;
+}
+
+.card {
+    padding: 20px;
+    height: 500px !important;
+    width: 300px !important;
+    background-color: rgba(0, 0, 0, 0.404) !important;
+    border-radius: 15px !important;
+    color: white !important;
+    gap: 10px !important;
+}
+
+.titulo_card_cursos {
+    margin-top: 15px;
+}
+
+.imagens_cards {
+    height: 50px;
+    width: 50px;
+
+    border-radius: 15px !important;
+
+    max-height: 100px !important;
+    max-width: 100px !important;
+}
+
+.botao_carrosel {
+    position: fixed !important;
+}
+
+/* .botao_carrosel_avançar{
+    position: absolute !important;
+    
+} */
