@@ -102,12 +102,10 @@
 }
 
 .container_imagem {
-<<<<<<< HEAD
     padding-left: 100px;
-=======
     padding-left: 50px;
     position: relative;
->>>>>>> 2ec8b077c5af57d3ae2c969e46826ce9daa71dd5
+
 }
 
 
@@ -124,12 +122,11 @@
 
 .botao {
     margin-top: 30px;
-    font-size: 25px;
     width: 120px;
     border-radius: 12px !important;
+    font-family: 'montSerrat';
 }
 
-<<<<<<< HEAD
 .pag_sobre {
     height: 100vh;
     min-width: 100%;
@@ -191,7 +188,6 @@
     position: absolute !important;
     
 } */
-=======
 .pelicula {
     position: absolute;
     z-index: 20;
@@ -199,4 +195,51 @@
     height: 780px;
     background-color: #00000057;
 }
->>>>>>> 2ec8b077c5af57d3ae2c969e46826ce9daa71dd5
+
+
+/* Efeito de aparição suave ao rolar */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.9s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.carousel-item {
+    display: flex !important;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    height: 400px;
+    /* Ajuste a altura do carrossel */
+    position: relative;
+    display: none;
+}
+
+.carousel-item .card {
+    margin: 0 auto;
+    /* Garante centralização do card */
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.botao_slide {
+    width: 60px;
+}
+
+.carousel-control-prev {
+    transform: translateX(-60px);
+    /* move para a esquerda */
+}
+
+.carousel-control-next {
+    transform: translateX(60px);
+    /* move para a direita */
+}

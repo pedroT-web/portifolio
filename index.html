@@ -7,154 +7,159 @@
   <title>Sobre - Pedro Augusto</title>
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/particles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">|
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header class="cabecalho ">
+  <header class="cabecalho">
     <div class="row justify-content-between">
       <div class="col-6">
         <img class="icone" src="./img/76f98505-5538-4210-904e-5d874fc7cb6c.png" alt="">
       </div>
       <nav class="navegacao col-2 text-end">
-        <a class="botoes_nav">Home</a>
-        <a class="botoes_nav">About</a>
+        <a class="botoes_nav" href="#paginaInicial">Home</a>
+        <a class="botoes_nav" href="#sobreMim">About</a>
         <a class="botoes_nav">Projects</a>
         <a class="botoes_nav">Contacts</a>
       </nav>
     </div>
-
   </header>
+
   <!-- Fundo com partículas -->
   <div id="particles-js"></div>
 
   <!-- Conteúdo da página -->
-  <main class="fundo_home row">
-    <section class="conteudo_home col-6 ">
-      <div class="container_home ">
+  <main id="paginaInicial" class="fundo_home row">
+    <section class="conteudo_home col-6">
+      <div class="container_home">
         <section class="conteudo">
           <h1><span class="nome">Pedro</span><br><span class="sobrenome">Augusto</span></h1>
-          <p class="estudo">Estudante FullStack</p>
-          <a href="https://www.linkedin.com/in/pedro-taroco1/" class="btn btn-outline-light botao me-5"
-            target="_blank">Linkedin</a>
-          <a href="https://github.com/pedroT-web" class="btn btn-outline-light botao ms-2" target="_blank">Git Hub</a>
+          <p class="estudo">Desenvolvedor FullStack</p>
+          <a href="https://www.linkedin.com/in/pedro-taroco1/" class="btn btn-outline-light botao me-5 fs-5"
+            target="_blank"><i class="bi bi-linkedin p-1"></i> Linkedin</a>
+          <a href="https://github.com/pedroT-web" class="btn btn-outline-light botao ms-2 fs-5" target="_blank"><i
+              class="bi bi-github p-1"></i> GitHub</a>
         </section>
       </div>
     </section>
-    <div class=" col-6">
-    </div>
+    <div class="col-6"></div>
   </main>
 
-  <section class="pag_sobre row">
-    <div class="conatiner_conteudo_sobre col-6">
-      <div class="conteudo_sobre">
+  <!-- Seção Sobre mim -->
+  <section id="sobreMim" class="pag_sobre row reveal">
+    <div class="conatiner_conteudo_sobre col-6 reveal">
+      <div class="conteudo_sobre reveal">
         <h1 class="mb-3">Sobre Mim</h1>
-        <p class="texto_sobre_mim">
+
+        <p class="texto_sobre_mim reveal">
           Meu nome é Pedro Augusto Taroco Santos, tenho 18 anos e sou estudante de Tecnologia,
           com foco no desenvolvimento de sistemas e sites. Atualmente, estou construindo minha
           base profissional através de cursos, projetos práticos e experiências que fortalecem
           minhas habilidades técnicas e meu entendimento sobre o mundo da tecnologia.
         </p>
-        <p class="texto_sobre_mim">
+
+        <p class="texto_sobre_mim reveal">
           Sou uma pessoa proativa, dedicada e movida pelo aprendizado contínuo. Estou sempre buscando evoluir, adquirir
           novos conhecimentos e encarar desafios que expandem minhas capacidades como desenvolvedor.
-        </p class="texto_sobre_mim">
-        <p class="texto_sobre_mim">
+        </p>
+
+        <p class="texto_sobre_mim reveal">
           Atualmente, curso o 2º ano do Ensino Médio na ETEC Polivalente de Americana, e tenho como objetivo, após sua
           conclusão, ingressar em uma faculdade de Engenharia de Software, aprofundando ainda mais meu caminho na área
           da tecnologia.
         </p>
-        <p class="texto_sobre_mim">
+
+        <p class="texto_sobre_mim reveal">
           Busco oportunidades para aplicar o que venho aprendendo, desenvolver projetos relevantes e crescer como
           profissional na área de TI.
         </p>
       </div>
     </div>
-    <div class=" container conatiner_conteudo_sobre col-6">
+
+    <div class="container container conatiner_conteudo_sobre col-6 reveal d-flex flex-column align-items-center">
       <div class="d-flex justify-content-center">
         <h1 class="mb-5">Cursos</h1>
       </div>
-      <div id="carrousel_1" class="carroseis carousel slide mb-5 d-flex justify-content-center ">
+      <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="container_carroseis container text-center">
-              <div class="container_div row align-items-start">
-                <div class="col">
-                  <figure class="card">
-                    <img class="imagen_cards img-fluid" src="./img/senac.png" class="card-img-top" alt="...">
-                    <h3 class="titulo_card_cursos">Técnico em Tecnologia da Informação</h3>
-                  </figure>
-                </div>
-                <div class="col">
-                  <figure class="card">
-                    <img class="imagen_cards img-fluid" src="./img/senac.png" class="card-img-top" alt="...">
+            <div class="row justify-content-center">
+              <div class="col-6 d-flex justify-content-center">
+                <figure class="card reveal">
+                  <img class="imagen_cards img-fluid" src="./img/senac.png" alt="">
+                  <h3 class="titulo_card_cursos">Desenvolvedor Back-End</h3>
+                </figure>
+              </div>
+              <div class="col-6 d-flex justify-content-center">
+                <figure class="card reveal">
+                  <img class="imagen_cards img-fluid" src="./img/senac.png" alt="">
+                  <h3 class="titulo_card_cursos">Técnico em Tecnologia da Informação</h3>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-6 d-flex justify-content-center">
+                  <figure class="card reveal">
+                    <img class="imagen_cards img-fluid" src="./img/senac.png" alt="">
                     <h3 class="titulo_card_cursos">Desenvolvedor Back-End</h3>
                   </figure>
                 </div>
+                <div class="col-6 d-flex justify-content-center">
+                  <figure class="card reveal">
+                    <img class="imagen_cards img-fluid" src="./img/senac.png" alt="">
+                    <h3 class="titulo_card_cursos">Técnico em Tecnologia da Informação</h3>
+                  </figure>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div id="carrousel_2" class="carousel-item">
-          <div class="container text-center">
-            <div class="row align-items-start">
-              <div class="col">
-                <figure class="card">
-                  <img class="imagen_cards img-fluid" src="./img/senai.png" class="card-img-top" alt="...">
-                  <h3 class="titulo_card_cursos">Trilha Microsoft (DP-900 e AI-900)</h3>
-                </figure>
-              </div>
-              <div class="col">
-                <figure class="card">
-                  <img class="imagen_cards img-fluid" src="./img/senai.png" class="card-img-top" alt="...">
-                  <h3 class="titulo_card_cursos">Power BI</h3>
-                </figure>
-              </div>
-            </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
           </div>
         </div>
-        <div id="carrousel_3" class="carousel-item">
-          <div class="container text-center">
-            <div class="row align-items-start">
-              <div class="col">
-                <figure class="card">
-                  <img class="imagen_cards img-fluid" src="./img/senai.png" class="card-img-top" alt="...">
-                  <h3 class="titulo_card_cursos">Introdução à Programação em Java</h3>
-                </figure>
-              </div>
-              <div class="col">
-                <figure class="card">
-                  <img class="imagen_cards img-fluid" src="./img/senai.png" class="card-img-top" alt="...">
-                  <h3 class="titulo_card_cursos">Programação em Java</h3>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex justify-content-between mt-2">
-          <button class="botao_carrosel_avançar carousel-control-prev" type="button" data-bs-target="#carrousel_1"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-
-          <button class="botao_carrosel carousel-control-next" type="button" data-bs-target="#carrousel_1"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
-        </div>
+        <button class="carousel-control-prev botao_slide" type="button" data-bs-target="#carouselExample"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next botao_slide" type="button" data-bs-target="#carouselExample"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+    </div>
   </section>
-
 
   <!-- Scripts -->
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="./js/app.js"></script>
   <script src="./js/particles.js"></script>
+
+  <!-- JS do efeito reveal -->
+  <script>
+    document.addEventListener("scroll", () => {
+      const reveals = document.querySelectorAll(".reveal");
+
+      reveals.forEach((el) => {
+        const posicao = el.getBoundingClientRect().top;
+        const alturaJanela = window.innerHeight - 120;
+
+        if (posicao < alturaJanela) {
+          el.classList.add("visible");
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
