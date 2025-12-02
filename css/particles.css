@@ -23,7 +23,7 @@ canvas {
     /* Fica atrás do conteúdo */
     top: 0;
     left: 0;
-    background-color: black;
+    background-color: #171F26   ;
     background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
