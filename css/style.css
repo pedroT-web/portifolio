@@ -35,7 +35,7 @@ body {
 } */
 
 .botoes_nav {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     text-decoration: none;
     color: white;
@@ -416,7 +416,7 @@ li {
     align-items: center;
     padding: 0 5px;
 
-    height: 70px;
+    height: 60px;
     width: 600px;
 }
 
