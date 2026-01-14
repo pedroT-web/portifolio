@@ -188,9 +188,8 @@ body {
 
 .conatiner_conteudo_habilidades,
 .conatiner_conteudo_Skills {
-    height: 400px;
     border-radius: 15px;
-    height: 550px !important;
+    height: 500px !important;
 
     color: white;
     background-color: rgba(255, 255, 255, 0.068);
@@ -593,4 +592,125 @@ li {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
+}
+
+.pag_contatos {
+    height: 250px;
+    padding-top: 40px;
+    backdrop-filter: blur(15px);
+
+}
+
+.pag_contatos h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.info_gerais_rodape {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.email-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.email-item i {
+    position: relative;
+    top: 1px;
+}
+
+.botoes_contatos {
+    color: white;
+}
+
+.lista_botoes_contato {
+    text-decoration: none;
+
+    padding: 0;
+    padding-top: 10px;
+    gap: 25px;
+}
+
+.lista_botoes_contato i {
+    transition: 0.2s ease-in-out;
+
+}
+
+.lista_botoes_contato i:hover {
+    color: rgba(255, 255, 255, 0.459);
+    transition: 0.2s ease-in-out;
+}
+
+.input_form_zap {
+    position: absolute;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.459);
+    outline: none;
+    border: none;
+
+    font-size: 16px;
+    padding-left: 7px;
+    border-bottom: 1px rgba(255, 255, 255, 0.219) solid;
+    width: 250px;
+    transition: 0.1s ease;
+    z-index: 1111;
+
+}
+
+.placeholder_input {
+    position: absolute;
+    padding: 0 10px;
+    transition: 0.1s ease;
+    font-size: 14px;
+
+    color: rgba(255, 255, 255, 0.336);
+}
+
+.input_form_zap:focus,
+.input_form_zap:valid {
+    border-bottom: 2px rgba(255, 255, 255, 0.582) solid;
+}
+
+.input_form_zap:focus+.placeholder_input,
+.input_form_zap:valid+.placeholder_input {
+    height: 30px;
+    line-height: 30px;
+    transform: translate(-10px, -20px);
+}
+
+
+.input_mensagem {
+    width: 350px !important;
+}
+
+.input_error {
+    border-bottom: 1px #f16c79 solid !important;
+}
+
+.placeholder_error {
+    color: #f16c79 !important;
+}
+
+.botao_enviar_zap {
+    margin-top: 23px;
+    border-radius: 10px;
+    padding: 10px;
+
+    text-align: center;
+    border: 2px #128C7E solid;
+
+    background-color: #0e7266;
+    color: #FFFFFF;
+    transition: 0.1s ease;
+}
+
+.botao_enviar_zap:hover {
+    border: 2px #0e7266 solid;
+    background-color: #128C7E;
+    transition: 0.3s ease;
 }

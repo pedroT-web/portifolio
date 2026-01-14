@@ -16,19 +16,6 @@
 </head>
 
 <body>
-  <!-- <header class="cabecalho">
-    <div class="row justify-content-between">
-      <div class="col-6">
-        <img class="icone" src="./img/76f98505-5538-4210-904e-5d874fc7cb6c.png" alt="">
-      </div>
-      <nav class="navegacao col-2 text-end">
-        <a class="botoes_nav" href="#paginaInicial">Home</a>
-        <a class="botoes_nav" href="#sobreMim">About</a>
-        <a class="botoes_nav">Projects</a>
-        <a class="botoes_nav">Contacts</a>
-      </nav>
-    </div>
-  </header> -->
   <header class="cabecalho">
     <div class="navegacao px-4">
       <nav>
@@ -37,7 +24,7 @@
           <li><a class="botoes_nav" href="#paginaInicial">Inicio</a></li>
           <li><a class="botoes_nav" href="#sobreMim">Sobre</a></li>
           <li><a class="botoes_nav" href="#pagProjetos">Projetos</a></li>
-          <li><a class="botoes_nav">Contato</a></li>
+          <li><a class="botoes_nav" href="#pagContatos">Contato</a></li>
         </ul>
       </nav>
     </div>
@@ -224,10 +211,10 @@
       </div>
     </div>
   </section>
-  <section id="pagProjetos" class="pag_projetos mt-5  reveal">
+  <section id="pagProjetos" class="pag_projetos mt-5 mb-5 reveal">
     <h2 class=" titulo_projetos text-center mt-5 fs-1 fw-bold">PROJETOS</h2>
     <div class="div_descricao_projetos w-100 text-center">
-      <label class="descricaoProjetos text-center mt-1 fs-6">Os projetos apresentados aqui fazem parte do
+      <label class="descricaoProjetos text-center mt-1 fs-5">Os projetos apresentados aqui fazem parte do
         meu processo de aprendizado e evolução como
         desenvolvedor.
         Em cada um deles busquei transformar ideias em soluções funcionais, explorando diferentes tecnologias, desafios
@@ -252,9 +239,19 @@
                   <li data-legenda="figma">
                     <img class="logos_projeto" src="./img/mysql.png" alt="">
                   </li>
+                  <li>
+                    <img class="logos_projeto" src="./img/css-3.png" alt="">
+                  </li>
+                  <li>
+                    <img class="logos_projeto" src="./img/html-5.png" alt="">
+                  </li>
+                  <li>
+                    <img class="logos_projeto" src="./img/bootstrap.png" alt="">
+                  </li>
                 </ul>
                 <h2 class="mb-3 fs-5">Recicla Senac</h2>
-                <label class="mb-3 fs-6">A proposta do Projeto Recicla Senac é auxiliar o controle de registro de pesagens de
+                <label class="mb-3 fs-6">A proposta do Projeto Recicla Senac é auxiliar o controle de registro de
+                  pesagens de
                   materiais recicláveis, tornando o processo mais ágil e acessível, além de permitir a geração de
                   relatórios em formato de planilhas que auxiliam na gestão da sustentabilidade interna do
                   instituto.</label>
@@ -264,9 +261,65 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
+  </section>
+  <section id="pagContatos" class="pag_contatos reveal">
+    <div class="row p-5">
+      <div class="col-8 col-sm-6 col-lg-4">
+        <div class="container info_gerais_rodape">
+          <h2 class="fs-4">INFORMAÇÕES GERAIS</h2>
+          <label class="fs-5">Pedro Augusto</label>
+          <label class="fs-5">Desenvolvedor Full Stack</label>
+          <label class="fs-5">Criando soluções modernas e funcionais com tecnologia</label>
+        </div>
+      </div>
+      <div class="col-8 col-sm-6 col-lg-4 text-white">
+        <h2 class="fs-4">INFORMAÇÕES DE CONTATO</h2>
+        <div class="email-item">
+          <i class="bi bi-envelope mt-1" aria-hidden="true"></i>
+          <label class="fs-5"> pedrotaroco1@gmail.com</label>
+        </div>
+        <div>
+          <ul class="lista_botoes_contato d-flex">
+            <li><a class="botoes_contatos" href="https://www.linkedin.com/in/pedro-taroco1/" target="_blank"><i
+                  class="bi bi-linkedin fs-1"></i></a></li>
+            <li><a class="botoes_contatos" href="https://github.com/pedroT-web" target="_blank"><i
+                  class="bi bi-github fs-1"></i></a></li>
+            <li><a class="botoes_contatos" href="https://www.instagram.com/pedrot_ag/" target="_blank"><i
+                  class="bi bi-instagram fs-1"></i></a></li>
+            <li>
+              <a href="https://wa.link/zus0ru" class="botoes_contatos" target="_blank">
+                <i class="bi bi-whatsapp fs-1"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-8 col-sm-6 col-lg-4 text-white">
+        <h2 class="fs-4">ENTRE EM CONTATO</h2>
+
+        <form id="forms" novalidate>
+          <div class="row">
+            <div class="field-holder col-6 mb-4 mt-2">
+              <input id="nome" class="input_form_zap" type="text" required>
+              <label id="label_nome" class="placeholder_input">Nome<label>
+            </div>
+            <div class="field-holder col-6 mb-4 mt-2">
+              <input id="telefone" class="input_form_zap" type="text" required>
+              <label id="label_telefone" class="placeholder_input">Telefone<label>
+            </div>
+            <div class="field-holder col-8 mt-5">
+              <input id="mensagem" class="input_form_zap input_mensagem" type="text" required>
+              <label id="label_mensagem" class="placeholder_input">Mensagem<label>
+            </div>
+            <div class="col-4">
+              <button class="botao_enviar_zap">Enviar Mensagem <i class="bi bi-send"></i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </section>
 
 
@@ -274,10 +327,13 @@
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
     particlesJS.load('particles-js', 'particles.json');
   </script>
 
+  <script src="./js/validacoes.js"></script>
+  <script src="./js/mensagem.js"></script>
   <script src="./js/app.js"></script>
   <script src="./js/particles.js"></script>
 
