@@ -36,7 +36,7 @@
           <li><a href="https://github.com/pedroT-web" class="botoes_nav" target="_blank">PedroT-web</a></li>
           <li><a class="botoes_nav" href="#paginaInicial">Inicio</a></li>
           <li><a class="botoes_nav" href="#sobreMim">Sobre</a></li>
-          <li><a class="botoes_nav">Projetos</a></li>
+          <li><a class="botoes_nav" href="#pagProjetos">Projetos</a></li>
           <li><a class="botoes_nav">Contato</a></li>
         </ul>
       </nav>
@@ -47,7 +47,7 @@
   <div id="particles-js"></div>
 
   <!-- Conteúdo da página -->
-  <main id="paginaInicial" class="fundo_home row">
+  <main id="paginaInicial" class="fundo_home row reveal">
     <section class="conteudo_home col-6">
       <div class="container_home">
         <section class="conteudo">
@@ -125,7 +125,8 @@
           <h1 class="mb-3 titulo_sobre_mim">Quem sou eu?</h1>
 
           <p class="texto_sobre_mim reveal">
-            Meu nome é <span class="palavras_chaves">Pedro Augusto Taroco Santos</span>, tenho 18 anos e sou estudante
+            Meu nome é <span class="palavras_chaves">Pedro Augusto Taroco Santos</span>, tenho <span id="idade"></span>
+            anos e sou estudante
             de
             Tecnologia,
             com foco no <span class="palavras_chaves">desenvolvimento de sistemas e sites</span>. Atualmente, estou
@@ -223,16 +224,49 @@
       </div>
     </div>
   </section>
-  <section id="pagProjetos" class="pag_projetos mt-5 reveal ">
-    <div class="row justify-content-center p-3">
-      <div class="conatiner_conteudo_projetos col-11 reveal">
-        <div class="conteudo_projetos w-100 h-100 me-1">
-          <h1 class="mb-3 titulo_projetos text-center mt-5 fs-1 fw-bold">PROJETOS</h1>
-
+  <section id="pagProjetos" class="pag_projetos mt-5  reveal">
+    <h2 class=" titulo_projetos text-center mt-5 fs-1 fw-bold">PROJETOS</h2>
+    <div class="div_descricao_projetos w-100 text-center">
+      <label class="descricaoProjetos text-center mt-1 fs-6">Os projetos apresentados aqui fazem parte do
+        meu processo de aprendizado e evolução como
+        desenvolvedor.
+        Em cada um deles busquei transformar ideias em soluções funcionais, explorando diferentes tecnologias, desafios
+        e
+        abordagens.
+        Mais do que código, cada projeto representa aprendizado, prática e crescimento profissional.</label>
+    </div>
+    <div class="container">
+      <div class="container mt-5">
+        <div class="row g-5">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="cards_projetos card-projeto-1 mt-3">
+              <img class="imagemProjeto" src="./img/projeto_reciclaSenac.png" alt="Projeto 1">
+              <div class="corpo_card_projetos">
+                <ul class="lista_logos_projetos">
+                  <li data-legenda="figma">
+                    <img class="logos_projeto" src="./img/figma.png" alt="">
+                  </li>
+                  <li data-legenda="figma">
+                    <img class="logos_projeto" src="./img/php.png" alt="">
+                  </li>
+                  <li data-legenda="figma">
+                    <img class="logos_projeto" src="./img/mysql.png" alt="">
+                  </li>
+                </ul>
+                <h2 class="mb-3 fs-5">Recicla Senac</h2>
+                <label class="mb-3 fs-6">A proposta do Projeto Recicla Senac é auxiliar o controle de registro de pesagens de
+                  materiais recicláveis, tornando o processo mais ágil e acessível, além de permitir a geração de
+                  relatórios em formato de planilhas que auxiliam na gestão da sustentabilidade interna do
+                  instituto.</label>
+              </div>
+              <div class="footer_card_projetos mt-3">
+                <a class="saiba_projetos" href="">Ver Mais</a>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
-    </div>
   </section>
 
 
@@ -249,22 +283,28 @@
 
   <!-- JS do efeito reveal -->
   <script>
-    document.addEventListener("scroll", () => {
-      const reveals = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          } else {
+            entry.target.classList.remove("visible");
+          }
+        });
+      },
+      {
+        threshold: 0.25
+      }
+    );
 
-      reveals.forEach((el) => {
-        const posicao = el.getBoundingClientRect().top;
-        const alturaJanela = window.innerHeight - 120;
-
-        console.log(posicao)
-        console.log(alturaJanela)
-
-        if (posicao < alturaJanela) {
-          el.classList.add("visible");
-        }
-      });
+    document.querySelectorAll(".reveal").forEach((el) => {
+      observer.observe(el);
     });
+
   </script>
+
+  <script src="./js/idade.js"></script>
 </body>
 
 </html>
