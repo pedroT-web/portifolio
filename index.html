@@ -257,12 +257,13 @@
                   instituto.</label>
               </div>
               <div class="footer_card_projetos mt-3">
-                <a class="saiba_projetos" href="">Ver Mais</a>
+                <button class="saiba_projetos open-modal" data-modal="projeto-1">Ver Mais</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </section>
   <section id="pagContatos" class="pag_contatos reveal">
     <div class="row p-5">
@@ -321,11 +322,33 @@
       </div>
     </div>
   </section>
+  <dialog class="hide" id="projeto-1">
+    <div class="hide" id="fade"></div>
+    <div class="modal-completo">
+      <div class="modal-header">
+        <h1>Hello Word</h1>
+        <button class="close-modal" data-modal="projeto-1">fechar</button>
+      </div>
+      <div class="modal-body">
+        <label for="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, temporibus officia
+          eius asperiores tempore error ab deleniti illo atque, voluptas vero suscipit, blanditiis
+          perspiciatis labore dolor eligendi natus quaerat ipsam Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Debitis sint porro, aperiam saepe magnam vero error sequi ipsum. Similique minus
+          odio unde beatae ipsam. Delectus iste earum at inventore perspiciatis.
+          Incidunt ab culpa sapiente at omnis nisi consequuntur ipsam veniam temporibus doloremque!
+          Molestias corporis hic laudantium impedit obcaecati eligendi voluptatum quaerat. Neque accusantium
+          deserunt sapiente architecto harum impedit numquam culpa.</label>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </dialog>
 
 
 
 
   <!-- Scripts -->
+  <script src="./js/modais.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>

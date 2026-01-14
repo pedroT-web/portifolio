@@ -7,32 +7,6 @@ body {
     overflow-x: hidden;
 }
 
-/* .cabecalho {
-    background-color: #141b2152;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 100%;
-    padding: 0;
-
-    position: fixed;
-    top: 0;
-    z-index: 100;
-}
-
-.navegacao {
-    display: flex;
-    justify-content: space-between;
-    max-height: 100%;
-    align-items: center;
-    margin-right: 50px;
-} */
-
-/* .icone {
-    max-height: 100px;
-    width: 100px;
-} */
 
 .botoes_nav {
     font-size: 16px;
@@ -409,7 +383,7 @@ li {
     justify-content: center;
     align-items: center;
     color: white;
-    z-index: 999;
+    z-index: 998;
     padding: 15px 30px;
 }
 
@@ -520,14 +494,14 @@ li {
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.048);
     border-radius: 24px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.11);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.082);
+    border: 1px solid rgba(255, 255, 255, 0.062);
     transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
     cursor: pointer;
 }
 
 .cards_projetos:hover {
-    transform: scale(1.03) translateY(-4px);
+    transform: scale(1.01) translateY(-2px);
     border-color: rgba(255, 255, 255, 0.35);
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.12), inset 0 0 18px rgba(255, 255, 255, 0.05);
 }
@@ -586,12 +560,21 @@ li {
     border-radius: 10px;
     font-size: 15px;
 
-    background-color: #ffffff;
-    color: black;
+    background-color: #ffffffc2;
+    color: rgba(0, 0, 0, 0.74);
 
+    outline: none;
+    border: none;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.saiba_projetos:hover {
+    transition: 0.2s ease;
+    background-color: #ffffffd7;
+    color: rgba(0, 0, 0, 0.884);
 }
 
 .pag_contatos {
@@ -713,4 +696,18 @@ li {
     border: 2px #0e7266 solid;
     background-color: #128C7E;
     transition: 0.3s ease;
+}
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.modal-completo {
+    z-index: 999 !important;
 }
