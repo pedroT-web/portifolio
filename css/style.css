@@ -7,6 +7,9 @@ body {
     overflow-x: hidden;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
 
 .botoes_nav {
     font-size: 16px;
@@ -49,7 +52,7 @@ body {
 }
 
 .container_home {
-    width: 600px !important;
+    max-width: 600px;
     height: 300px;
 
     background-color: transparent;
@@ -112,18 +115,13 @@ body {
     min-width: 100%;
 
     position: relative;
+    display: flex;
+    justify-content: center;
 
 }
 
 .texto_sobre_mim {
     font-size: 18px;
-}
-
-.palavras_chaves {
-    color: #3B82F6;
-    font-weight: bold;
-
-    border-bottom: 1px solid #3B82F6;
 }
 
 .titulo_sobre_mim {
@@ -135,10 +133,7 @@ body {
 }
 
 .conatiner_conteudo_sobre {
-    /* padding: 100px; */
-
-    height: 400px;
-    /* border: 5px solid #77db62; */
+    height: 816px;
     border-radius: 15px;
 
     color: white;
@@ -155,15 +150,23 @@ body {
     color: white;
 
     border-radius: 10px;
-    padding-top: 50px;
-    padding-left: 50px;
+    padding: 40px;
     width: 100%;
 }
 
-.conatiner_conteudo_habilidades,
+.conatiner_conteudo_habilidades {
+    border-radius: 15px;
+    height: 390px !important;
+
+    color: white;
+    background-color: rgba(255, 255, 255, 0.068);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.329);
+}
+
 .conatiner_conteudo_Skills {
     border-radius: 15px;
-    height: 500px !important;
+    height: 390px !important;
 
     color: white;
     background-color: rgba(255, 255, 255, 0.068);
@@ -178,8 +181,7 @@ body {
 
     gap: 30px;
 
-    padding: 0 !important;
-    margin: 0;
+
 }
 
 .slide {
@@ -473,7 +475,7 @@ li {
 .lista_habilidades li {
     list-style: none;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
 }
 
 .div_descricao_projetos {
@@ -708,22 +710,164 @@ li {
     z-index: 1;
 }
 
-.modal-completo {
-    position: relative;
-    z-index: 2;
-
-    background-color: rgba(0, 0, 0, 0.9);
-    border-radius: 15px;
-    width: 90%;
-    max-width: 600px;
-    margin: auto;
-    margin-top: 10vh;
-}
-
+/* O dialog NÃO deve ter fundo */
 dialog {
     position: fixed;
     inset: 0;
     border: none;
     padding: 0;
     background: transparent;
+    overflow: hidden;
+
+}
+
+/* FUNDO ESCURO + BLUR */
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+}
+
+/* CONTEÚDO DO MODAL */
+.modal-completo {
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.096);
+    color: #fff;
+
+    width: 1000px !important;
+    /* max-width: 90%; */
+    height: 700px;
+    margin: auto;
+    margin-top: 10vh;
+
+    padding: 20px;
+    border-radius: 12px;
+    z-index: 1;
+
+
+    overflow-y: auto;
+    scrollbar-width: none;
+
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+dialog[open] .modal-completo {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.modal-fechando {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+}
+
+.modal-completo::-webkit-scrollbar {
+    display: none;
+}
+
+.imagen-projeto1 {
+    width: 100%;
+    height: auto;
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.container_titulo_projeto {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.container_sobre {
+    width: 2000px;
+    gap: 50px;
+    margin: 0;
+}
+
+.github-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .github-text {
+        display: none;
+    }
+
+    .github-icon {
+        display: inline;
+        font-size: 2rem;
+    }
+
+    .conteudo_home {
+        padding-left: 30px !important;
+    }
+
+    .conatiner_conteudo_sobre {
+        height: 1070px;
+    }
+
+    .conatiner_conteudo_habilidades {
+        height: 510px !important;
+    }
+
+    .conatiner_conteudo_Skills {
+        height: 440px !important;
+    }
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .conatiner_conteudo_sobre {
+        height: 1250px;
+    }
+
+    .conatiner_conteudo_habilidades {
+        height: 660px !important;
+    }
+
+    .conatiner_conteudo_Skills {
+        height: 550px !important;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .container_home {
+        width: auto !important;
+    }
+
+    .conatiner_conteudo_sobre {
+        height: 1200px;
+    }
+
+    .conatiner_conteudo_habilidades {
+        height: 510px !important;
+    }
+
+    .conatiner_conteudo_Skills {
+        height: 440px !important;
+    }
+}
+
+@media (min-width: 1280px) {
+    .conatiner_conteudo_sobre {
+        height: 1070px;
+    }
+
+    .conatiner_conteudo_habilidades {
+        height: 510px !important;
+    }
+
+    .conatiner_conteudo_Skills {
+        height: 440px !important;
+    }
+
 }

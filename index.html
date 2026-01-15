@@ -20,7 +20,11 @@
     <div class="navegacao px-4">
       <nav>
         <ul class="links p-3">
-          <li><a href="https://github.com/pedroT-web" class="botoes_nav" target="_blank">PedroT-web</a></li>
+          <li><a href="https://github.com/pedroT-web" class="botoes_nav" target="_blank"><span
+                class="github-text">PedroT-web</span>
+              <i class="bi bi-github github-icon "></i>
+            </a>
+          </li>
           <li><a class="botoes_nav" href="#paginaInicial">Inicio</a></li>
           <li><a class="botoes_nav" href="#sobreMim">Sobre</a></li>
           <li><a class="botoes_nav" href="#pagProjetos">Projetos</a></li>
@@ -35,7 +39,7 @@
 
   <!-- Conteúdo da página -->
   <main id="paginaInicial" class="fundo_home row reveal">
-    <section class="conteudo_home col-6">
+    <section class="conteudo_home col-12 col-lg-7 col-md-9 col-sm-12">
       <div class="container_home">
         <section class="conteudo">
           <h1><span class="nome">Pedro</span><br><span class="sobrenome">Augusto</span></h1>
@@ -105,107 +109,74 @@
   </main>
 
   <!-- Seção Sobre mim -->
-  <section id="sobreMim" class="pag_sobre reveal ">
-    <div class="row justify-content-center p-3">
-      <div class="conatiner_conteudo_sobre col-11 reveal mt-5">
-        <div class="conteudo_sobre w-100 me-1">
+  <section id="sobreMim" class="pag_sobre reveal">
+    <div class="row container_sobre justify-content-center p-5">
+      <div class="conatiner_conteudo_sobre  col-lg-5 col-md-10 col-sm-12 reveal mt-5">
+        <div class="conteudo_sobre w-100 ">
           <h1 class="mb-3 titulo_sobre_mim">Quem sou eu?</h1>
-
-          <p class="texto_sobre_mim reveal">
-            Meu nome é <span class="palavras_chaves">Pedro Augusto Taroco Santos</span>, tenho <span id="idade"></span>
-            anos e sou estudante
-            de
-            Tecnologia,
-            com foco no <span class="palavras_chaves">desenvolvimento de sistemas e sites</span>. Atualmente, estou
-            construindo minha
-            base profissional através de cursos, projetos práticos e experiências que fortalecem
-            minhas habilidades técnicas e meu entendimento sobre o <span class="palavras_chaves">mundo da
-              tecnologia</span>.
+          <p class="texto_sobre_mim reveal mb-4 mt-4">
+            Pedro Augusto Taroco Santos, <span id="idade"></span> anos, estudante de Tecnologia com foco no
+            desenvolvimento de sistemas e
+            sites. Tenho interesse em compreender a tecnologia na prática, desde a lógica do código até a estrutura das
+            aplicações, por meio de estudos e projetos práticos.
           </p>
-
-          <p class="texto_sobre_mim reveal">
-            Sou uma pessoa <span class="palavras_chaves">proativa, dedicada</span> e movida pelo aprendizado contínuo.
-            Estou sempre buscando <span class="palavras_chaves">evoluir, adquirir
-              novos conhecimentos e encarar desafios</span> que expandem minhas capacidades como <span
-              class="palavras_chaves">desenvolvedor</span>.
+          <p class="texto_sobre_mim mb-4 reveal">
+            Sou uma pessoa proativa e dedicada, com foco no aprendizado contínuo. Busco evoluir constantemente, aprender
+            novas tecnologias e enfrentar desafios que ampliem minhas habilidades como desenvolvedor.
           </p>
-
-          <p class="texto_sobre_mim reveal">
-            Atualmente, curso o 2º ano do Ensino Médio na ETEC Polivalente de Americana, e tenho como objetivo, após sua
-            conclusão, ingressar em uma faculdade de <span class="palavras_chaves">Engenharia de Software</span>,
-            aprofundando ainda mais meu caminho na área
-            da <span class="palavras_chaves">tecnologia</span>.
+          <p class="texto_sobre_mim mb-4 reveal">
+            Atualmente, curso o 3º ano do Ensino Médio na ETEC Polivalente de Americana e tenho como objetivo ingressar
+            em uma faculdade de Engenharia de Software, aprofundando meus conhecimentos em desenvolvimento e boas
+            práticas de programação.
           </p>
-
+          <p class="texto_sobre_mim mb-4 reveal">
+            Durante minha trajetória, aplico a teoria na prática por meio de projetos pessoais e estudos direcionados.
+            Tenho interesse no desenvolvimento de sistemas e na criação de interfaces funcionais, sempre prezando por
+            código limpo e organizado.
+          </p>
           <p class="texto_sobre_mim reveal">
-            Busco oportunidades para aplicar o que venho aprendendo, desenvolver projetos relevantes e crescer como
-            profissional na área de TI.
+            No momento, busco oportunidades para aplicar meus conhecimentos, participar de projetos relevantes e crescer
+            profissionalmente na área de Tecnologia da Informação, evoluindo ao lado de profissionais experientes.
           </p>
         </div>
       </div>
-    </div>
-    <div class="row justify-content-center p-3 reveal">
-      <div class="col-11 container-conteudo-softSkills">
-        <div class="col-6 conatiner_conteudo_habilidades mb-5">
-          <div class="conteudo_habilidades w-100 px-5">
-            <h1 class="mb-3 titulo_sobre_mim reveal">Habilidades e conhecimentos</h1>
+      <div class="col-lg-5 col-md-10 col-sm-12 container-conteudo-softSkills mt-5">
+        <div class="row w-100 g-5">
+          <div class="col-12 col-sm-12 w-100 conatiner_conteudo_habilidades">
+            <div class="conteudo_habilidades w-100">
+              <h1 class="mb-3 titulo_sobre_mim reveal">Habilidades e conhecimentos</h1>
 
-            <ul class="lista_habilidades text-start reveal">
-              <li><span class="fw-bold">Node.js</span> - (APIs REST, Express, rotas, integração com bancos de
-                dados)
-              </li>
-              <li><span class="fw-bold">MySQL</span> - MariaDB (SELECT, INSERT, UPDATE, DELETE, JOINs, CREATE,
-                ALTER,
-                modelagem e tratamento de dados)</li>
-              <li><span class="fw-bold">MongoDB</span> - (JSON, modelagem de documentos, CRUD, coleções,
-                filtros,
-                projeções, agregações e índices)</li>
-              <li><span class="fw-bold">Java</span> - (POO, SpringBoot e estrutura MVC)</li>
-              <li><span class="fw-bold">JavaScript</span> - (DOM, eventos, ES6+, fetch API, manipulação de
-                elementos,
-                lógica de programação e animações)</li>
-              <li><span class="fw-bold">PHP</span> - (CRUD, integração com MySQL, rotas simples, sessões,
-                validações e
-                templates)</li>
-              <li><span class="fw-bold">C#</span> - (APIs simples consumo de dados e estrutura MVC)</li>
-              <li><span class="fw-bold">HTML5 & CSS3</span> - (semântica, responsividade, Flexbox, Grid,
-                animações,
-                acessibilidade e boas práticas)</li>
-              <li><span class="fw-bold">Figma</span> - (protótipos, design system, componentes e prototipação
-                interativa)</li>
-              <li><span class="fw-bold">Git & GitHub</span> - (branches, merge, pull requests, versionamento de
-                projetos, issues, forks e colaboração)</li>
-              <li><span class="fw-bold">Microsoft Azure</span> - (recursos básicos, criação de serviços, noções
-                de
-                infraestrutura e fundamentos de nuvem)</li>
-            </ul>
+              <ul class="lista_habilidades text-start reveal">
+                <li><span class="fw-bold">Node.js</span> - (APIs REST)</li>
+                <li><span class="fw-bold">MySQL</span> - (consultas, CRUD e JOINs)</li>
+                <li><span class="fw-bold">MongoDB</span> - (JSON, CRUD e modelagem)</li>
+                <li><span class="fw-bold">Java</span> - (POO, SpringBoot e estrutura MVC)</li>
+                <li><span class="fw-bold">JavaScript</span> - (DOM e eventos)</li>
+                <li><span class="fw-bold">PHP</span> - (CRUD, templates, MVC, PDO)</li>
+                <li><span class="fw-bold">C#</span> - (APIs simples e consumo de dados)</li>
+                <li><span class="fw-bold">HTML5 & CSS3</span> - (semântica, responsividade, Grid)</li>
+                <li><span class="fw-bold">Git & GitHub</span> - (PRs, versionamento, branches)</li>
+                <li><span class="fw-bold">Microsoft Azure</span> - (noções de infraestrutura e fundamentos de nuvem)
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="w-100 conatiner_conteudo_Skills">
-          <div class="conteudo_softSkills w-100 px-5">
-            <h1 class="mb-3 titulo_sobre_mim reveal">Soft Skills</h1>
-
-            <ul class="lista_habilidades text-start reveal">
-              <li><span class="fw-bold">Comunicação e Trabalho em Equipe</span> - Colaboração clara e objetiva no
-                trabalho em conjunto.</li>
-              <li><span class="fw-bold">Pensamento Lógico e Resolução de Problemas</span> - Análise e resolução
-                eficiente de problemas.</li>
-              <li><span class="fw-bold">Foco em Resultados</span> - Compromisso em entregar soluções funcionais e bem
-                feitas.</li>
-              <li><span class="fw-bold">Proatividade</span> - Busca constante por melhorias e novos aprendizados.</li>
-              <li><span class="fw-bold">Aprendizado Contínuo e Curiosidade Tecnológica</span> - Interesse em novas
-                tecnologias e ferramentas.</li>
-              <li><span class="fw-bold">Evolução Constante</span> - Melhoria contínua de habilidades e correção de
-                pontos de melhoria.</li>
-              <li><span class="fw-bold">Organização e Gestão de Tempo</span> - Boa priorização de tarefas e cumprimento
-                de prazos.</li>
-              <li><span class="fw-bold">Mentalidade de Crescimento</span> - Busca evoluir continuamente e corrigir
-                falhas.</li>
-              <li><span class="fw-bold">Enfrentar e Superar Novos Desafios</span> - Encaro desafios como oportunidades
-                de aprendizado.</li>
-              <li><span class="fw-bold">Adaptabilidade e Aprendizado Rápido</span> - Facilidade em se adaptar a mudanças
-                e aprender novas tecnologias.</li>
-            </ul>
+          <div class="col-12 col-sm-12 conatiner_conteudo_Skills">
+            <div class="conteudo_softSkills w-100">
+              <h1 class="mb-3 titulo_sobre_mim reveal">Soft Skills</h1>
+              <ul class="lista_habilidades text-start reveal">
+                <li class="fw-bold">Comunicação e Trabalho em Equipe</li>
+                <li class="fw-bold">Pensamento Lógico e Resolução de Problemas</li>
+                <li class="fw-bold">Foco em Resultados</li>
+                <li class="fw-bold">Proatividade</li>
+                <li class="fw-bold">Aprendizado Contínuo e Curiosidade Tecnológica</li>
+                <li class="fw-bold">Evolução Constante</li>
+                <li class="fw-bold">Organização e Gestão de Tempo</li>
+                <li class="fw-bold">Mentalidade de Crescimento</li>
+                <li class="fw-bold">Enfrentar e Superar Novos Desafios</li>
+                <li class="fw-bold">Adaptabilidade e Aprendizado Rápido</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -325,12 +296,14 @@
       </div>
     </div>
   </section>
-  <dialog id="projeto-1">
-    <div id="fade"></div>
+  <dialog id="projeto-1" class="modal-projetos">
     <div class="modal-completo">
       <div class="modal-header">
-        <h1>Hello Word</h1>
-        <button class="close-modal" data-modal="projeto-1">fechar</button>
+        <div class="container_titulo_projeto mb-4">
+          <h1>Sistema Recicla Senac - Web</h1>
+          <button class="close-modal" data-modal="projeto-1">fechar</button>
+        </div>
+        <img class="imagen-projeto1" src="./img/exemploProjeto.jpg" alt="">
       </div>
       <div class="modal-body">
         <label for="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, temporibus officia
