@@ -27,6 +27,8 @@ document.querySelectorAll(".modal-projetos").forEach(dialog => {
     dialog.addEventListener("click", (e) => {
         if (e.target === dialog) {
             dialog.close();
+            document.body.classList.remove("modal-open");
+
         }
     });
 });

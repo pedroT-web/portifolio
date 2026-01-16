@@ -122,6 +122,8 @@ body.modal-open {
 
 .texto_sobre_mim {
     font-size: 18px;
+
+    margin: 30px 0;
 }
 
 .titulo_sobre_mim {
@@ -133,7 +135,7 @@ body.modal-open {
 }
 
 .conatiner_conteudo_sobre {
-    height: 816px;
+    height: auto;
     border-radius: 15px;
 
     color: white;
@@ -156,7 +158,7 @@ body.modal-open {
 
 .conatiner_conteudo_habilidades {
     border-radius: 15px;
-    height: 390px !important;
+    height: auto;
 
     color: white;
     background-color: rgba(255, 255, 255, 0.068);
@@ -166,7 +168,7 @@ body.modal-open {
 
 .conatiner_conteudo_Skills {
     border-radius: 15px;
-    height: 390px !important;
+    height: auto !important;
 
     color: white;
     background-color: rgba(255, 255, 255, 0.068);
@@ -176,12 +178,9 @@ body.modal-open {
 
 .container-conteudo-softSkills {
     display: flex;
-    /* justify-content: space-between ; */
     align-items: start;
 
     gap: 30px;
-
-
 }
 
 .slide {
@@ -331,7 +330,7 @@ li {
     text-align: center;
 }
 
-.pelicula img{
+.pelicula img {
     width: 100%;
 }
 
@@ -425,6 +424,8 @@ li {
     margin: 0;
     display: flex;
     gap: 40px;
+
+    align-items: center;
 }
 
 .carrosel {
@@ -589,6 +590,10 @@ li {
     transition: 0.2s ease;
 }
 
+.pag_projetos {
+    margin-top: 150px !important;
+}
+
 .saiba_projetos:hover {
     transition: 0.2s ease;
     background-color: #ffffffd7;
@@ -596,7 +601,7 @@ li {
 }
 
 .pag_contatos {
-    height: 250px;
+    height: auto;
     padding-top: 40px;
     backdrop-filter: blur(15px);
 
@@ -657,7 +662,8 @@ li {
     font-size: 16px;
     padding-left: 7px;
     border-bottom: 1px rgba(255, 255, 255, 0.219) solid;
-    width: 250px;
+    width: auto !important;
+    max-width: 250px;
     transition: 0.1s ease;
     z-index: 1111;
 
@@ -684,10 +690,6 @@ li {
     transform: translate(-10px, -20px);
 }
 
-
-.input_mensagem {
-    width: 350px !important;
-}
 
 .input_error {
     border-bottom: 1px #f16c79 solid !important;
@@ -795,6 +797,12 @@ dialog[open] .modal-completo {
     flex-direction: column;
 }
 
+.botao_fechar_modal{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
 .container_titulo_projeto {
     display: flex;
     justify-content: space-between;
@@ -803,9 +811,10 @@ dialog[open] .modal-completo {
 }
 
 .container_sobre {
-    width: 2000px;
+    max-width: 2000px;
+    width: 100%;
+    margin: 0 auto;
     gap: 50px;
-    margin: 0;
 }
 
 .github-icon {
@@ -822,36 +831,78 @@ dialog[open] .modal-completo {
         font-size: 2rem;
     }
 
+    .navegacao {
+        width: auto !important;
+    }
+
     .conteudo_home {
-        padding-left: 30px !important;
+        width: 100% !important;
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        justify-content: center;
     }
 
+
+    .container_home {
+        width: 90% !important;
+    }
+
+    .container-conteudo-softSkills,
     .conatiner_conteudo_sobre {
-        height: 1070px;
+        margin-top: 0 !important;
+        width: 90% !important;
+        padding: 0 !important;
+        justify-content: center;
     }
 
-    .conatiner_conteudo_habilidades {
-        height: 510px !important;
+    .container_contato {
+        padding-top: 30px !important;
     }
 
-    .conatiner_conteudo_Skills {
-        height: 440px !important;
+    .row>* {
+        padding-left: 0 !important;
     }
 
-
+    .forms .row {
+        margin-left: 0 !important;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
+
+    .container-conteudo-softSkills,
     .conatiner_conteudo_sobre {
-        height: 1250px;
+        margin-top: 0 !important;
+        width: 90% !important;
+        padding: 0 !important;
+        justify-content: center;
     }
 
-    .conatiner_conteudo_habilidades {
-        height: 660px !important;
+    .container_contato {
+        padding-top: 10px !important;
     }
 
-    .conatiner_conteudo_Skills {
-        height: 550px !important;
+    .row>* {
+        padding-left: 0 !important;
+    }
+
+    .forms .row {
+        margin-left: 0 !important;
+    }
+
+    .conteudo_home {
+        width: 100% !important;
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .container_home {
+        width: 100% !important;
     }
 }
 
@@ -860,30 +911,18 @@ dialog[open] .modal-completo {
         width: auto !important;
     }
 
-    .conatiner_conteudo_sobre {
-        height: 1200px;
-    }
 
-    .conatiner_conteudo_habilidades {
-        height: 510px !important;
-    }
 
-    .conatiner_conteudo_Skills {
-        height: 440px !important;
+
+    .field-holder {
+        margin-right: 10px !important;
     }
 }
 
 @media (min-width: 1280px) {
+
+    .container-conteudo-softSkills,
     .conatiner_conteudo_sobre {
-        height: 1070px;
+        margin-top: 50px !important;
     }
-
-    .conatiner_conteudo_habilidades {
-        height: 510px !important;
-    }
-
-    .conatiner_conteudo_Skills {
-        height: 440px !important;
-    }
-
 }
