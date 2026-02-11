@@ -138,6 +138,7 @@ body.modal-open {
     height: auto;
     border-radius: 15px;
 
+
     color: white;
     background-color: rgba(255, 255, 255, 0.068);
     backdrop-filter: blur(5px);
@@ -156,9 +157,17 @@ body.modal-open {
     width: 100%;
 }
 
+.container_sobre {
+    max-width: 2000px;
+    width: 100% !important;
+    margin: 0 auto;
+    gap: 50px;
+    
+}
+
 .conatiner_conteudo_habilidades {
     border-radius: 15px;
-    height: auto;
+    height: 100%;
 
     color: white;
     background-color: rgba(255, 255, 255, 0.068);
@@ -632,11 +641,16 @@ li {
     outline: none;
     border: none;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px !important;
+
     font-size: 16px;
     padding-left: 7px;
     border-bottom: 1px rgba(255, 255, 255, 0.219) solid;
-    width: auto !important;
-    max-width: 250px;
+    width: 95% !important;
+    /* max-width: 250px; */
     transition: 0.1s ease;
     z-index: 1111;
 
@@ -644,11 +658,15 @@ li {
 
 .placeholder_input {
     position: absolute;
-    padding: 0 10px;
-    transition: 0.1s ease;
+    top: 8px;
+    left: 7px;
+
+    padding: 0 5px;
     font-size: 14px;
 
     color: rgba(255, 255, 255, 0.336);
+    pointer-events: none;
+    transition: 0.2s ease;
 }
 
 .input_form_zap:focus,
@@ -677,18 +695,32 @@ li {
     border-radius: 10px;
     padding: 10px;
 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px !important;
+
     text-align: center;
     border: 2px #128C7E solid;
 
     background-color: #0e7266;
     color: #FFFFFF;
     transition: 0.1s ease;
+    width: 100%;
+    max-width: 300px;
+
 }
 
 .botao_enviar_zap:hover {
     border: 2px #0e7266 solid;
     background-color: #128C7E;
     transition: 0.3s ease;
+}
+
+.field-holder {
+    position: relative;
+    width: 100%;
 }
 
 #fade {
@@ -770,7 +802,7 @@ dialog[open] .modal-completo {
     flex-direction: column;
 }
 
-.botao_fechar_modal{
+.botao_fechar_modal {
     background-color: transparent;
     border: none;
     color: white;
@@ -783,20 +815,10 @@ dialog[open] .modal-completo {
     width: 100%;
 }
 
-.container_sobre {
-    max-width: 2000px;
-    width: 100%;
-    margin: 0 auto;
-    gap: 50px;
-}
-
 .github-icon {
     display: none;
 }
 
-
-.row
-    
 
 @media (max-width: 768px) {
     .github-text {
@@ -886,13 +908,6 @@ dialog[open] .modal-completo {
 @media (min-width: 1024px) and (max-width: 1279px) {
     .container_home {
         width: auto !important;
-    }
-
-
-
-
-    .field-holder {
-        margin-right: 10px !important;
     }
 }
 
