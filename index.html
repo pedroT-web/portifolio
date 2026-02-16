@@ -184,7 +184,7 @@
   </section>
   <section id="pagProjetos" class="pag_projetos mb-5 reveal">
     <h2 class=" titulo_projetos text-center mt-5 fs-1 fw-bold">PROJETOS</h2>
-    <div class="div_descricao_projetos w-100 text-center">
+    <div class="div_descricao_projetos w-100 text-center mb-5">
       <label class="descricaoProjetos text-center mt-1 fs-5">Os projetos apresentados aqui fazem parte do
         meu processo de aprendizado e evolução como
         desenvolvedor.
@@ -193,11 +193,11 @@
         abordagens.
         Mais do que código, cada projeto representa aprendizado, prática e crescimento profissional.</label>
     </div>
-    <div class="container">
+    <div class="container mt-2 mb-5">
       <div class="row g-5">
-        <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+        <div class="col-12 col-sm-12 col-lg-4 col-md-6">
           <div class="cards_projetos card-projeto-1 mt-3">
-            <img class="imagemProjeto" src="./img/projeto_reciclaSenac.png" alt="Projeto 1">
+            <img class="imagemProjeto mb-2" src="./img/projeto_reciclaSenac.png" alt="Projeto 1">
             <div class="corpo_card_projetos">
               <ul class="lista_logos_projetos">
                 <li data-legenda="figma">
@@ -222,8 +222,8 @@
                   <img class="logos_projeto" src="./img/js.png" alt="javascript">
                 </li>
               </ul>
-              <h2 class="mb-3 fs-5">Recicla Senac</h2>
-              <label class="mb-3 fs-6">A proposta do Projeto Recicla Senac é auxiliar o controle de registro de
+              <h2 class="mb-3 fs-4">Recicla Senac</h2>
+              <label class="mb-3 fs-5">A proposta do Projeto Recicla Senac é auxiliar o controle de registro de
                 pesagens de
                 materiais recicláveis, tornando o processo mais ágil e acessível, além de permitir a geração de
                 relatórios em formato de planilhas que auxiliam na gestão da sustentabilidade interna do
@@ -234,7 +234,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -298,29 +297,38 @@
       </div>
     </div>
   </section>
-  <dialog id="projeto-1" class="modal-projetos">
-    <div class="modal-completo">
-      <div class="modal-header">
-        <div class="container_titulo_projeto mb-4">
-          <h1>Sistema Recicla Senac - Web</h1>
-          <button class="close-modal botao_fechar_modal" data-modal="projeto-1"><i class="bi bi-x-lg fs-2"></i></button>
-        </div>
-        <!-- <img class="imagen-projeto1" src="./img/exemploProjeto.jpg" alt=""> -->
-        <iframe src="https://www.youtube.com/watch?v=RvmKYVZXx1Y&list=PLzAuAQ68ptr2QmCqde4w95kXh-gs24A1E"
-          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-        </iframe>
+  <dialog id="projeto-1" class="modal-projetos w-100">
+    <div class="modal-completo ">
+      <div class="header-modal">
+        <h1 class="titulo_moda">Sistema Recicla Senac - Web</h1>
+        <button class="close-modal botao_fechar_modal" data-modal="projeto-1"><i class="bi bi-x-lg fs-2"></i></button>
       </div>
       <div class="modal-body">
-        <label for="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, temporibus officia
-          eius asperiores tempore error ab deleniti illo atque, voluptas vero suscipit, blanditiis
-          perspiciatis labore dolor eligendi natus quaerat ipsam Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Debitis sint porro, aperiam saepe magnam vero error sequi ipsum. Similique minus
-          odio unde beatae ipsam. Delectus iste earum at inventore perspiciatis.
-          Incidunt ab culpa sapiente at omnis nisi consequuntur ipsam veniam temporibus doloremque!
-          Molestias corporis hic laudantium impedit obcaecati eligendi voluptatum quaerat. Neque accusantium
-          deserunt sapiente architecto harum impedit numquam culpa.</label>
+        <div class="ratio ratio-16x9 mb-3">
+          <iframe class="d-block w-100" src="https://www.youtube.com/embed/y9n6HkftavM?si=AYkY2x2u6WVhyqF2"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 15px;"></iframe>
+        </div>
+        <h3 class="fs-1 mb-1">Objetivo Principal: Eficiência Interna e Gestão Ambiental</h3>
+        <p class="fs-4">O <span class="fw-bold">Projeto Recicla Senac</span> tem como objetivo <span
+            class="fw-bold">contribuir para a
+            gestão da sustentabilidade</span> do
+          instituto <span class="fw-bold">Senac de Americana</span>, transformando um processo feito a mão, em um
+          sistema que gera impacto positivo
+          para a instituição e ao <span class="fw-bold">meio ambiente.</span>
+        </p>
+        <p class="fs-4 mb-1">
+          A iniciativa busca não apenas agilizar o processo de registro, mas também contribuir para a <span class="fw-bold">organização e
+          eficiência</span> das rotinas internas, oferecendo uma ferramenta de apoio prática e funcional.
+        </p>
+        <hr>
+        <h3 class="fs-1 mb-1">Jornada do Projeto</h3>
+        <p></p>
+        <hr>
       </div>
-      <div class="modal-footer">
+      <div class="footer-modal">
+        <a class="botao_objetivoProjeto" href="https://github.com/pedroT-web/Projeto_ReciclaSenac.git">Ver Código e Objetivo Completo </a>
       </div>
     </div>
   </dialog>

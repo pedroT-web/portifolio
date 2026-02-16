@@ -162,7 +162,7 @@ body.modal-open {
     width: 100% !important;
     margin: 0 auto;
     gap: 50px;
-    
+
 }
 
 .conatiner_conteudo_habilidades {
@@ -310,6 +310,8 @@ li {
     max-height: 100px !important;
     max-width: 100px !important;
 }
+
+
 
 .botao_carrosel {
     position: fixed !important;
@@ -490,7 +492,7 @@ li {
 .cards_projetos {
     width: 100%;
     max-width: 400px;
-    padding: 15px;
+    padding: 10px;
     margin: 0 auto;
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.048);
@@ -511,7 +513,7 @@ li {
     height: 200px;
     width: 100%;
 
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .lista_logos_projetos {
@@ -524,7 +526,7 @@ li {
     gap: 20px;
 }
 
-.lista_logos_projetos::after {
+.lista_logos_projetos li::after {
     content: attr(data-legenda);
     position: absolute;
     bottom: -30;
@@ -542,8 +544,9 @@ li {
 }
 
 .logos_projeto {
-    height: 25px;
-    width: 25px;
+    position: relative;
+    height: 20px;
+    width: 20px;
     margin-top: 10px;
 }
 
@@ -558,7 +561,7 @@ li {
 .saiba_projetos {
     width: 100%;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 15px;
 
     background-color: #ffffffc2;
@@ -756,7 +759,7 @@ dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.096);
     color: #fff;
 
-    width: 1000px !important;
+    max-width: 1000px !important;
     /* max-width: 90%; */
     height: 700px;
     margin: auto;
@@ -778,6 +781,32 @@ dialog::backdrop {
 
 }
 
+.footer-modal {
+    display: flex;
+    justify-content: center;
+}
+
+.botao_objetivoProjeto {
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    backdrop-filter: blur(8px) saturate(120%);
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.02);
+    text-decoration: none;
+    color: white;
+    transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease;
+    cursor: pointer;
+}
+
+.botao_objetivoProjeto:hover {
+    transform: translateY(-5px);
+    transition: transform 200ms ease, box-shadow 200ms ease, 200ms ease;
+}
+
+
 dialog[open] .modal-completo {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -797,22 +826,17 @@ dialog[open] .modal-completo {
     height: auto;
 }
 
-.modal-header {
+.header-modal {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 .botao_fechar_modal {
     background-color: transparent;
     border: none;
     color: white;
-}
-
-.container_titulo_projeto {
-    display: flex;
-    justify-content: space-between;
-
-    width: 100%;
 }
 
 .github-icon {
