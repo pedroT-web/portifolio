@@ -755,7 +755,7 @@ li {
 .input_form_zap:valid+.placeholder_input {
     height: 30px;
     line-height: 30px;
-    transform: translate(-10px, -20px);
+    transform: translate(-10px, -30px);
 }
 
 
@@ -810,56 +810,6 @@ li {
     z-index: 1;
 }
 
-/* O dialog NÃO deve ter fundo */
-dialog {
-    position: fixed;
-    inset: 0;
-    border: none;
-    padding: 0;
-    background: transparent;
-    overflow: hidden;
-
-}
-
-/* FUNDO ESCURO + BLUR */
-dialog::backdrop {
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(6px);
-}
-
-/* CONTEÚDO DO MODAL */
-.modal-completo {
-    backdrop-filter: blur(20px);
-    background-color: rgba(0, 0, 0, 0.096);
-    color: #fff;
-
-    max-width: 1000px !important;
-    /* max-width: 90%; */
-    height: 700px;
-    margin: auto;
-    margin-top: 10vh;
-
-    padding: 20px;
-    border-radius: 12px;
-    z-index: 1;
-
-
-    overflow-y: auto;
-    scrollbar-width: none;
-
-    opacity: 0;
-    transform: translateY(20px) scale(0.98);
-    transition:
-        opacity 0.3s ease,
-        transform 0.3s ease;
-
-}
-
-.footer-modal {
-    display: flex;
-    justify-content: center;
-}
-
 .botao_objetivoProjeto {
     padding: 0.75rem 1.25rem;
     border-radius: 10px;
@@ -880,38 +830,11 @@ dialog::backdrop {
     transition: transform 200ms ease, box-shadow 200ms ease, 200ms ease;
 }
 
-
-dialog[open] .modal-completo {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-}
-
-.modal-fechando {
-    opacity: 0;
-    transform: translateY(20px) scale(0.98);
-}
-
-.modal-completo::-webkit-scrollbar {
-    display: none;
-}
-
 .imagen-projeto1 {
     width: 100%;
     height: auto;
 }
 
-.header-modal {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
-
-.botao_fechar_modal {
-    background-color: transparent;
-    border: none;
-    color: white;
-}
 
 .github-icon {
     display: none;
