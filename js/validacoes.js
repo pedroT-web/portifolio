@@ -1,28 +1,6 @@
 const regexNumero = /\d/
 const regexLetras = /[a-zA-ZÀ-ÿ]/
 
-const telefonePessoa = document.getElementById("telefone")
-const labelTelefone = document.getElementById("label_telefone")
-
-function fnValidarTelefone(telefoneRecebido) {
-    const valorTelefone = telefoneRecebido.value.trim();
-
-    if (valorTelefone.length < 10 || valorTelefone.length > 11) {
-        telefoneRecebido.classList.add("input_error")
-        labelTelefone.classList.add("placeholder_error")
-        return false
-    } else {
-        telefoneRecebido.classList.remove("input_error")
-        labelTelefone.classList.remove("placeholder_error")
-        return true
-    }
-}
-
-telefonePessoa.addEventListener("blur", e => {
-    fnValidarTelefone(telefonePessoa)
-})
-
-
 const nomePessoa = document.getElementById("nome")
 const labelNome = document.getElementById("label_nome")
 
@@ -77,10 +55,9 @@ const formulario = document.getElementById("forms")
 
 formulario.addEventListener("submit", e => {
     const nomeValido = fnValidarNome(nomePessoa)
-    const telefoneValido = fnValidarTelefone(telefonePessoa)
     const mensagemValida = fnValidarMensagem(mensagemPessoa)
 
-    if (!nomeValido || !telefoneValido || !mensagemValida) {
+    if (!nomeValido || !mensagemValida) {
         e.preventDefault()
 
         Swal.fire({
