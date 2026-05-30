@@ -161,7 +161,7 @@ body.modal-open {
     max-width: 2000px;
     width: 100% !important;
     margin: 0 auto;
-    gap: 50px;
+    gap: 30px;
 
 }
 
@@ -189,7 +189,7 @@ body.modal-open {
     display: flex;
     align-items: start;
 
-    gap: 30px;
+    row-gap: 30px;
 }
 
 .slide {
@@ -366,7 +366,8 @@ li {
     /* move para a direita */
 }
 
-#pagProjetos {
+#pagProjetos,
+.pagCetificados {
     color: white;
     position: relative;
 
@@ -633,13 +634,13 @@ li {
     object-fit: cover;
 }
 
-.info_instituos_certificados{
+.info_instituos_certificados {
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
 
-.certificado_titulo{
+.certificado_titulo {
     font-size: 16px;
 
     margin: 0;
@@ -840,6 +841,20 @@ li {
     display: none;
 }
 
+.linha_conteudo_skills {
+    row-gap: 30px !important;
+}
+
+
+.linha_certificados,
+.linha_conteudo_skills {
+    margin: 0px !important;
+}
+
+.conatiner_conteudo_habilidades,
+.conatiner_conteudo_Skills {
+    min-height: 100% !important;
+}
 
 @media (max-width: 768px) {
     .github-text {
@@ -869,12 +884,13 @@ li {
         width: 90% !important;
     }
 
-    .container-conteudo-softSkills,
-    .conatiner_conteudo_sobre {
+
+    .conatiner_conteudo_sobre,
+    .container-conteudo-softSkills {
         margin-top: 0 !important;
         width: 90% !important;
         padding: 0 !important;
-        justify-content: center;
+        justify-content: center !important;
     }
 
     .container_contato {
@@ -888,6 +904,8 @@ li {
     .forms .row {
         margin-left: 0 !important;
     }
+
+
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
@@ -899,6 +917,8 @@ li {
         padding: 0 !important;
         justify-content: center;
     }
+
+
 
     .container_contato {
         padding-top: 10px !important;
@@ -924,11 +944,29 @@ li {
     .container_home {
         width: 100% !important;
     }
+
+    .card_certificado {
+        height: 370px !important;
+    }
+
+    .card_certificado_header {
+        height: 150px !important;
+        align-items: flex-start;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
     .container_home {
         width: auto !important;
+    }
+
+    .card_certificado {
+        height: 370px !important;
+    }
+
+    .card_certificado_header {
+        height: 160px !important;
+        align-items: flex-start;
     }
 }
 

@@ -14,7 +14,7 @@ $("forms").addEventListener("submit", e => {
 
     window.open(
         `https://wa.me/${meuTelefone}?text=${encodeURIComponent(
-            `Olá! Sou ${n}.\nTelefone: ${telefoneFormatado}\n\n${m}`
+            `Olá! Sou ${n}.\n\n${m}`
         )}`,
         "_blank"
     )
