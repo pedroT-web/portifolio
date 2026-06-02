@@ -177,7 +177,8 @@ body.modal-open {
 
 .conatiner_conteudo_Skills {
     border-radius: 15px;
-    height: auto !important;
+    height: 100%;
+
 
     color: white;
     background-color: rgba(255, 255, 255, 0.068);
@@ -515,6 +516,7 @@ li {
     width: 100%;
 
     border-radius: 15px;
+    object-fit: cover;
 }
 
 .lista_logos_projetos {
